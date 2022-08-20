@@ -13,7 +13,7 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
   }
 
   function deleteFromEmployeeByKey(employee, key){
-    var clone = Object.assign({}, employee);
+    const clone = Object.assign({}, employee);
     delete clone[key];
     return clone
   }
